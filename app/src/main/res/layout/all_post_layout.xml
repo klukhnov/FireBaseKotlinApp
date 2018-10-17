@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/post_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/postProfileImg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/postUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UserName"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/bredfont"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bredfont"
+                        android:textColor="@color/colorBlack" />
+                    <TextView
+                        android:id="@+id/postDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:fontFamily="@font/bredfont"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/postTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:fontFamily="@font/bredfont"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="5dp"/>
+
+
+                </LinearLayout>
+           </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/postDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:fontFamily="@font/bredfont"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/postImg"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:background="@drawable/image"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/likeBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="38dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dislike" />
+            <TextView
+                android:id="@+id/displayLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Likes"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"/>
+            <ImageButton
+                android:id="@+id/commentBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/comment"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="240dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

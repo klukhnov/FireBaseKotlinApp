@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context="com.example.home.socialservicenetworkapp.SetupActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setupProfImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="79dp"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/setupUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setupProfImg"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:fontFamily="@font/bredfont"
+        android:hint="User name"
+        android:inputType="textMultiLine"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/setupFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setupUserName"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/name"
+        android:ems="10"
+        android:fontFamily="@font/bredfont"
+        android:hint="Full name"
+        android:inputType="textMultiLine"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/setupCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupFullName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/country"
+        android:ems="10"
+        android:fontFamily="@font/bredfont"
+        android:hint="Country"
+        android:inputType="textMultiLine"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/setupInfoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupCountry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/inputs"
+        android:fontFamily="@font/bredfont"
+        android:padding="8dp"
+        android:text="Save" />
+</RelativeLayout>

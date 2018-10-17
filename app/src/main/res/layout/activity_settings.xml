@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".SettingsActivity">
+
+    <include
+        android:id="@+id/setTbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="458dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/setProfImg"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profile" />
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/setProfImg"
+                android:layout_below="@+id/setProfImg"
+                android:layout_marginLeft="80dp"
+                android:theme="@style/SpinnerItem" />
+
+            <EditText
+                android:id="@+id/setStatus"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/spinnerStatus"
+                android:hint="Profile status"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/setUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setStatus"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:hint="Username" />
+
+            <EditText
+                android:id="@+id/setFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setUserName"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:hint="Full name" />
+
+            <EditText
+                android:id="@+id/setCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setFullName"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:hint="Country" />
+
+            <EditText
+                android:id="@+id/setDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setCountry"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:hint="Date of birth" />
+
+            <EditText
+                android:id="@+id/setRelStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setDOB"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:hint="Relationship status" />
+
+            <EditText
+                android:id="@+id/setGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setRelStatus"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:hint="Gender" />
+
+            <Button
+                android:id="@+id/updateAccSetBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/setGender"
+                android:background="@drawable/button"
+                android:fontFamily="@font/bredfont"
+                android:textColor="@color/colorBlack"
+                android:text="Update account settings" />
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/setProfImg"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/bredfont"
+                android:text="Status"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

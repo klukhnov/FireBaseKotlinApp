@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">209388049527-7lnrqhk8qre470oborsp5v6jolr5got2.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://socialservicenetworkapp.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">209388049527</string>
+    <string name="google_api_key" translatable="false">AIzaSyCtWVZJcXR_OkU9p_RIzOVPqLHwK9Y-7-U</string>
+    <string name="google_app_id" translatable="false">1:209388049527:android:82532ecff1f06d8e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCtWVZJcXR_OkU9p_RIzOVPqLHwK9Y-7-U</string>
+    <string name="google_storage_bucket" translatable="false">socialservicenetworkapp.appspot.com</string>
+    <string name="project_id" translatable="false">socialservicenetworkapp</string>
+</resources>

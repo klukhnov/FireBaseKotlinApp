@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="Base.V26.Theme.AppCompat"/>
+    <style name="Base.Theme.AppCompat.Light" parent="Base.V26.Theme.AppCompat.Light"/>
+    <style name="Base.V26.Theme.AppCompat" parent="Base.V23.Theme.AppCompat">
+        <!-- We can use the platform styles on API 26+ -->
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat.Light" parent="Base.V23.Theme.AppCompat.Light">
+        <!-- We can use the platform styles on API 26+ -->
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="Base.V26.Widget.AppCompat.Toolbar" parent="Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="Base.V26.Widget.Design.AppBarLayout" parent="Base.V21.Widget.Design.AppBarLayout">
+        <item name="android:keyboardNavigationCluster">true</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Toolbar" parent="Base.V26.Widget.AppCompat.Toolbar"/>
+    <style name="Base.Widget.Design.AppBarLayout" parent="Base.V26.Widget.Design.AppBarLayout"/>
+    <style name="NavigationText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/bredfont</item>
+    </style>
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/bredfont</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:fontFamily">@font/bredfont</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="SpinnerItem.DropDownItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/bredfont</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="Theme.NoTitleBar.WithColoredSpinners" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+    </style>
+</resources>

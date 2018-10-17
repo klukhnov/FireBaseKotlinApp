@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SocialServiceNetworkApp</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string-array name="status_array">
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+
+</resources>
+
+
